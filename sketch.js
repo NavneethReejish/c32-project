@@ -188,7 +188,7 @@ function draw() {
 
   
   textSize(24);
-  fill(txtcolor)
+  fill(0)
   text("Score : "+score,30,360);
  // console.log(score);
   
@@ -215,19 +215,5 @@ function keyPressed()
   }
 }
 
-async function fetchtime()
-{
-    var time=await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
-    var data=await time.json();
-    console.log(data);
-    var hour=data.datetime.slice(11,13);
-    if(hour>=6&&hour<=18)
-    {
-      bg=color("azure");
-      txtcolor=color("black")
-    }
-    else{
-       bg=color("black")
-       txtcolor=color("white")
-    }
+
 }
