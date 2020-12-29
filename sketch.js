@@ -182,13 +182,13 @@ function draw() {
 
   //Addiding instructions
   strokeWeight(0);
-  fill(198);
+  fill(255);
   textSize(22);
   text("Drag the Hexagonal Stone and Release it, to launch it towards the blocks",150,30);
 
   
   textSize(24);
-  fill(198)
+  fill(255)
   text("Score : "+score,30,360);
  // console.log(score);
   
